@@ -1,6 +1,12 @@
 package com.techforb.demo.persona;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table
 public class Persona {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String numcard;
